@@ -14,16 +14,21 @@ public class Pattern_10 {
 		}
 	public static void print(int n) {
 		int k=0;
-		for(int i=0;i<n*2-1;i++) {
-			if(i<n)k=i;
-			if(i==n)k=n-1;
-			for(int j=0;j<k+1;j++) {
-				if(i<n)
-				System.out.print("*");
-				else {System.out.print("*");
-				k--;
+		for(int i=1;i<=n*2-1;i++) {
+			
+			if(i<=n-1 ) k=i;
+			else if(i==n) k=n;
+//			System.out.println("i:"+i+"k:"+k);
+			for(int j=1;j<k+1;j++) {
+				if(i<=n-1) System.out.print("*");
+				else if (i>=n) {
+					System.out.print("*");
+					
 				}
-			}System.out.println();
+				
+			}k--; System.out.println();
+			
+			}
 		}
-	}
+	
 }

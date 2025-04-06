@@ -5,7 +5,7 @@ public class Pattern_9 {
 	
 	
 	 void printTriangle(int n) {
-	        // code here
+	    // code here
 	    int col=n*2-1;
 		for(int i=n-1;i>=0;i--) {
 			for(int j=0;j<col;j++) {

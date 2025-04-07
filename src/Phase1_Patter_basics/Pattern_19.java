@@ -1,5 +1,6 @@
 package Phase1_Patter_basics;
 
+
 import java.util.Scanner;
 
 public class Pattern_19 {
@@ -42,5 +43,6 @@ public static void main(String args[]) {
 //		System.out.print(" ");
 //	}else 
 //		System.out.print("*");
+
 	
 }

@@ -15,7 +15,6 @@ public class Pattern_3 {
 	public void print(int row) {
 		
 		for(int i=1;i<=row;i++) {
-			
 			for(int j=1;j<i+1;j++) {
 				System.out.print(j+" ");}System.out.println();
 		} 

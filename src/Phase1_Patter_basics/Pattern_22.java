@@ -11,18 +11,39 @@ public class Pattern_22 {
 		p22.print(n);
 	}
 	public static void print(int n) {
-		int rc=n*2-1;
-		for (int i=0;i<rc;i++){
-			for(int j=0;j<rc;j++) {
-				if(i==0 || j==0 || j==rc-1 || i==rc-1) {
-					System.out.print(n);
+		
+		for(int i=0;i<n;i++) {
+			int temp=n;
+			for(int j =0;j<=n*2-1;j++) {
+				 if(j<i) {
+					 System.out.print(temp);
+					 temp--;
+				 }
+				if(j>=i+1  && j<n*2-i) {
+					temp=n-i;
+					System.out.print(temp);
 				}
-				else if(i==1 || j==1 || j==rc-2 || i==rc-2) {
-					System.out.print(n-1);
+				else if (j>=n*2-i && j<=n*2)
+					{
+					temp++;System.out.print(temp);}
+			}System.out.println();//System.out.print
+		}
+		for(int i=n-2;i>=0;i--) {
+			int temp=n;
+			for(int j =0;j<=n*2-1;j++) {
+				 if(j<i) {
+					 System.out.print(temp);
+					 temp--;
+				 }
+				if(j>=i+1  && j<n*2-i) {
+					temp=n-i;
+					System.out.print(temp);
 				}
-				else if(i==2 || j==2 || j==rc-3 || i==rc-3) {
-					System.out.print(n-2);
-				}
-			}
-			System.out.println();
-		}}}
+				else if (j>=n*2-i && j<=n*2)
+					{
+					temp++;System.out.print(temp);}
+			}System.out.println();//System.out.print
+			
+		}
+	}
+	}
